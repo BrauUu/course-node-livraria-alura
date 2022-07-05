@@ -5,6 +5,8 @@ const router = Router()
 
 router.get('/books', BookController.findAllBooks)
 
+router.get('/books/publisher/:publisher', BookController.findAllBooksByPublisher)
+
 router.get('/books/:id', BookController.findOneBook)
 
 router.post('/books', BookController.createBook)
